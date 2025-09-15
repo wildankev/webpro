@@ -11,6 +11,9 @@ h1 {
     color: darkgreen;
     margin-bottom: 10px;
     text-align: center;
+    background-color: rgb(0, 200, 255);
+    padding: 10px;
+    border-radius: 5px;
 }
 
 hr {
@@ -49,3 +52,4 @@ section h3 {
 section p {
     font-size: 14px;
 }
+
