@@ -11,6 +11,8 @@ Materi di-ambil melalui link [ini](https://fajarbaskoro.blogspot.com/2017/03/pwe
 ### Preview website
 ![Preview](assets/preview.png)
 
+![Preview](assets/preview.gif)
+
 Kode `HTML` dapat diakses [di sini](index.html).
 
 ---
