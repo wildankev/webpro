@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Web Programming Course - Learn Modern Web Development</title>
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- Bootstrap Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+        
+        <style>
+            :root {
+                --bg-primary: #0f172a;
+                --bg-secondary: #1e293b;
+                --bg-card: #334155;
+                --text-primary: #f1f5f9;
+                --text-secondary: #cbd5e1;
+                --text-muted: #94a3b8;
+                --accent-primary: #3b82f6;
+                --accent-secondary: #06b6d4;
+                --success: #10b981;
+                --warning: #f59e0b;
+                --border: #475569;
+            }
+            
+            body {
+                background-color: var(--bg-primary) !important;
+                color: var(--text-primary);
+            }
+            
+            .bg-custom-dark {
+                background-color: var(--bg-secondary) !important;
+            }
+            
+            .bg-card {
+                background-color: var(--bg-card) !important;
+            }
+            
+            .text-accent {
+                color: var(--accent-primary) !important;
+            }
+            
+            .text-secondary-accent {
+                color: var(--accent-secondary) !important;
+            }
+            
+            .border-custom {
+                border-color: var(--border) !important;
+            }
+            
+            .btn-primary {
+                background-color: var(--accent-primary);
+                border-color: var(--accent-primary);
+            }
+            
+            .btn-primary:hover {
+                background-color: #2563eb;
+                border-color: #2563eb;
+            }
+            
+            .btn-outline-primary {
+                color: var(--accent-primary);
+                border-color: var(--accent-primary);
+            }
+            
+            .btn-outline-primary:hover {
+                background-color: var(--accent-primary);
+                border-color: var(--accent-primary);
+            }
+            
+            .progress-bar {
+                background-color: var(--success) !important;
+            }
+            
+            .card {
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+            }
+            
+            .card:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+            }
+            
+            .btn {
+                transition: all 0.2s ease;
+            }
+            
+            a:hover {
+                color: var(--accent-primary) !important;
+                transition: color 0.2s ease;
+            }
+            
+            .badge {
+                opacity: 0.9;
+                transition: opacity 0.2s ease;
+            }
+            
+            .badge:hover {
+                opacity: 1;
+            }
+        </style>
+    </head>
+    
+    <body class="bg-dark">
+        
+        <!-- Header -->
+        <header class="bg-custom-dark p-3 border-bottom border-custom">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h2 class="mb-0 text-accent">
+                            <i class="bi bi-code-slash"></i> 
+                            WebDev Course
+                        </h2>
+                        <p class="mb-0 small" style="color: var(--text-muted)">
+                            Master Modern Web Programming
+                        </p>
+                    </div>
+                    <nav>
+                        <a href="#" class="btn btn-outline-primary me-2">
+                            <i class="bi bi-house"></i> Home
+                        </a>
+                        <a href="#" class="btn btn-outline-primary me-2">
+                            <i class="bi bi-book"></i> Courses
+                        </a>
+                        <a href="#" class="btn btn-outline-primary me-2">
+                            <i class="bi bi-person"></i> About
+                        </a>
+                        <a href="#" class="btn btn-primary">
+                            <i class="bi bi-box-arrow-in-right"></i> Login
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="container my-4">
+            <div class="row">
+                
+                <!-- Sidebar -->
+                <aside class="col-md-3 mb-3">
+                    <div class="card bg-card border-custom mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title text-accent">
+                                <i class="bi bi-play-circle"></i> HTML Basics
+                            </h5>
+                            <p class="card-text" style="color: var(--text-secondary)">
+                                Learn the fundamentals of HTML structure and semantic elements
+                            </p>
+                            <div class="progress mb-2" style="height: 5px;">
+                                <div class="progress-bar" style="width: 100%; background-color: var(--success);"></div>
+                            </div>
+                            <small style="color: var(--success)">Completed</small>
+                        </div>
+                    </div>
+                    
+                    <div class="card bg-card border-custom mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title text-accent">
+                                <i class="bi bi-palette"></i> CSS Styling
+                            </h5>
+                            <p class="card-text" style="color: var(--text-secondary)">
+                                Master CSS for beautiful and responsive designs
+                            </p>
+                            <div class="progress mb-2" style="height: 5px;">
+                                <div class="progress-bar" style="width: 75%; background-color: var(--warning);"></div>
+                            </div>
+                            <small style="color: var(--warning)">In Progress</small>
+                        </div>
+                    </div>
+                    
+                    <div class="card bg-card border-custom mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title text-accent">
+                                <i class="bi bi-code-square"></i> JavaScript
+                            </h5>
+                            <p class="card-text" style="color: var(--text-secondary)">
+                                Dynamic programming for interactive web applications
+                            </p>
+                            <div class="progress mb-2" style="height: 5px;">
+                                <div class="progress-bar" style="width: 30%; background-color: var(--accent-secondary);"></div>
+                            </div>
+                            <small style="color: var(--accent-secondary)">30% Complete</small>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="col-md-9">
+                    
+                    <!-- Hero Section -->
+                    <div class="card bg-card border-custom mb-4">
+                        <div class="card-body text-center py-5">
+                            <h1 class="display-5 fw-bold text-accent mb-3">
+                                <i class="bi bi-laptop"></i> 
+                                Web Programming Mastery
+                            </h1>
+                            <p class="lead mb-4" style="color: var(--text-secondary)">
+                                Learn modern web development from scratch. Master HTML, CSS, JavaScript, 
+                                and popular frameworks like Bootstrap, React, and Node.js
+                            </p>
+                            <div class="d-flex justify-content-center gap-3">
+                                <a href="#" class="btn btn-primary btn-lg">
+                                    <i class="bi bi-play-fill"></i> Start Learning
+                                </a>
+                                <a href="#" class="btn btn-outline-primary btn-lg">
+                                    <i class="bi bi-info-circle"></i> Course Info
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Features -->
+                    <h3 class="fw-bold mb-4 text-accent">
+                        <i class="bi bi-stars"></i> What You'll Learn
+                    </h3>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="card bg-card border-custom h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-accent">
+                                        <i class="bi bi-file-earmark-code"></i> 
+                                        Frontend Development
+                                    </h5>
+                                    <p class="card-text" style="color: var(--text-secondary)">
+                                        Master HTML5, CSS3, JavaScript ES6+, responsive design, and modern 
+                                        frameworks like React and Vue.js. Build beautiful, interactive user interfaces.
+                                    </p>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-1" style="color: var(--success)">
+                                            <i class="bi bi-check-circle"></i> HTML5 Semantic Elements
+                                        </li>
+                                        <li class="mb-1" style="color: var(--success)">
+                                            <i class="bi bi-check-circle"></i> CSS Grid & Flexbox
+                                        </li>
+                                        <li class="mb-1" style="color: var(--success)">
+                                            <i class="bi bi-check-circle"></i> JavaScript DOM Manipulation
+                                        </li>
+                                        <li class="mb-1" style="color: var(--success)">
+                                            <i class="bi bi-check-circle"></i> React Components
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn btn-primary">
+                                        Explore Frontend <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <div class="card bg-card border-custom h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-accent">
+                                        <i class="bi bi-server"></i> 
+                                        Backend Development
+                                    </h5>
+                                    <p class="card-text" style="color: var(--text-secondary)">
+                                        Learn server-side programming with Node.js, Express.js, databases (MongoDB, MySQL), 
+                                        APIs, authentication, and deployment strategies.
+                                    </p>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-1" style="color: var(--accent-secondary)">
+                                            <i class="bi bi-check-circle"></i> Node.js & Express
+                                        </li>
+                                        <li class="mb-1" style="color: var(--accent-secondary)">
+                                            <i class="bi bi-check-circle"></i> RESTful APIs
+                                        </li>
+                                        <li class="mb-1" style="color: var(--accent-secondary)">
+                                            <i class="bi bi-check-circle"></i> Database Integration
+                                        </li>
+                                        <li class="mb-1" style="color: var(--accent-secondary)">
+                                            <i class="bi bi-check-circle"></i> User Authentication
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn btn-primary">
+                                        Explore Backend <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Statistics -->
+                    <div class="card bg-card border-custom mt-4">
+                        <div class="card-body">
+                            <h5 class="card-title text-accent">
+                                <i class="bi bi-graph-up"></i> 
+                                Course Statistics & Curriculum
+                            </h5>
+                            
+                            <div class="row text-center mt-3">
+                                <div class="col-md-3 mb-3">
+                                    <div class="p-3">
+                                        <h3 class="text-accent mb-1">120+</h3>
+                                        <small style="color: var(--text-secondary)">Video Lessons</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <div class="p-3">
+                                        <h3 style="color: var(--success)" class="mb-1">50+</h3>
+                                        <small style="color: var(--text-secondary)">Hands-on Projects</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <div class="p-3">
+                                        <h3 style="color: var(--warning)" class="mb-1">15+</h3>
+                                        <small style="color: var(--text-secondary)">Programming Languages</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <div class="p-3">
+                                        <h3 style="color: var(--accent-secondary)" class="mb-1">24/7</h3>
+                                        <small style="color: var(--text-secondary)">Support Available</small>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-3">
+                                <p class="card-text" style="color: var(--text-secondary)">
+                                    Our comprehensive web programming curriculum covers everything from basic HTML structure 
+                                    to advanced full-stack development. You'll build real-world projects including e-commerce sites, 
+                                    social media platforms, and progressive web applications. With modern tools like Bootstrap, 
+                                    Tailwind CSS, React, Node.js, and cloud deployment, you'll be job-ready upon completion.
+                                </p>
+                                <div class="d-flex gap-2 mt-3 flex-wrap">
+                                    <span class="badge" style="background-color: var(--accent-primary)">HTML5</span>
+                                    <span class="badge" style="background-color: var(--accent-secondary)">CSS3</span>
+                                    <span class="badge" style="background-color: var(--warning)">JavaScript</span>
+                                    <span class="badge" style="background-color: var(--success)">Bootstrap</span>
+                                    <span class="badge" style="background-color: var(--accent-primary)">React</span>
+                                    <span class="badge" style="background-color: var(--bg-card)">Node.js</span>
+                                    <span class="badge" style="background-color: var(--success)">MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-custom-dark py-4 border-top border-custom mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <h5 class="text-accent mb-3">
+                            <i class="bi bi-code-slash"></i> WebDev Course
+                        </h5>
+                        <p class="mb-2" style="color: var(--text-secondary)">
+                            Empowering the next generation of web developers with cutting-edge skills 
+                            and real-world experience.
+                        </p>
+                        <div class="d-flex gap-3">
+                            <a href="#" style="color: var(--text-secondary)" class="fs-4">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="#" style="color: var(--text-secondary)" class="fs-4">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="#" style="color: var(--text-secondary)" class="fs-4">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="#" style="color: var(--text-secondary)" class="fs-4">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3 mb-3">
+                        <h6 class="text-accent mb-3">Quick Links</h6>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#" class="text-decoration-none" style="color: var(--text-muted)">
+                                    All Courses
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none" style="color: var(--text-muted)">
+                                    Learning Path
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none" style="color: var(--text-muted)">
+                                    Practice Projects
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none" style="color: var(--text-muted)">
+                                    Certification
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-3 mb-3">
+                        <h6 class="text-accent mb-3">Support</h6>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#" class="text-decoration-none" style="color: var(--text-muted)">
+                                    Help Center
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none" style="color: var(--text-muted)">
+                                    Community Forum
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none" style="color: var(--text-muted)">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none" style="color: var(--text-muted)">
+                                    Terms & Privacy
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <hr style="border-color: var(--border)">
+                
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <small style="color: var(--text-muted)">
+                            © 2024 WebDev Course. All rights reserved. Built with ❤️ for aspiring developers.
+                        </small>
+                    </div>
+                    <div>
+                        <small style="color: var(--text-muted)">
+                            Made with Bootstrap & Modern Web Technologies
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
