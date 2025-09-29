@@ -1,4 +1,4 @@
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/57b698ff-66f7-40f4-ab14-4fd18f98df1b" /># Tugas Landing Page - Pemrograman Web B
+# Tugas Landing Page - Pemrograman Web B
 
 ## Deskripsi
 Assalamualaikum Wr. Wb., pada tugas kali ini dalam kelas Pemrograman Web Kelas B 
