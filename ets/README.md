@@ -32,6 +32,7 @@ Untuk landing page yang sudah saya kerjakan dapat diakses melalui link [berikut]
 
 ## Preview
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d1a26ac1-295c-42a5-80b9-1fe7f8abf461" />
+
 Untuk lebih lengkapnya, dapat diakses melalui link [berikut](https://wildankev.github.io/pweb-ets-265/)
 
 ## Kode Program
